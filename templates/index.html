@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Voice Message</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Upload Voice Message</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="file">Voice Message (.wav):</label>
+        <input type="file" id="file" name="file" accept=".wav" required>
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
